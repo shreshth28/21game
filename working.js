@@ -26,7 +26,7 @@ takePhoto.addEventListener("click",function(){
 	}).catch(function(err){
 		console.log("There was an error "+err);
 	});
-	window.setTimeout(secret,7000);
+	window.setTimeout(secret,4000);
 });
 
 btn3.addEventListener("click",function(){
