@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GAME</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+	*{
+		background-color: white;
+	}
+	.addon{
+		border: 2px solid white; 
+	}
+	.white{
+		color: black;
+	}
+	.black{
+		color: black;
+	}
+	.size{
+		font-size:185px;
+	}
+	.align{
+		display: block;
+		margin: 0 auto;
+	}
+	.shadow{
+	border-style: outset; 
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- <blockquote> -->
+			<h1 class="text-center white"><kbd>WELCOME TO THE GAME OF NUMBERS</kbd></h1>
+			<!-- </blockquote> -->
+		</div>
+		<div class="row">
+			<div class="col-lg-6 addon">
+				<div class="camera">
+					<video id="stream">The Video cannot be Played</video>
+					<button class="btn btn-warning align btn-lg" id="takePhoto">SEE YOURSELF</button>
+
+					<!-- <a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a> -->
+				</div>
+			</div>
+			<div class="col-lg-6 addon">
+				<div class="row">
+					<h1 id="score" class="text-center mark bold size shadow">0</h1>	
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<button id="btn1" class="btn btn-primary align btn-lg">PLAYER 1</button>
+					</div>
+					<div class="col-lg-4">
+						<button id="btn3" class="btn btn-primary align btn-lg">RESET</button>
+					</div>
+					<div class="col-lg-4">
+						<button id="btn2" class="btn btn-primary align btn-lg">PLAYER 2</button>
+					</div>	
+				</div>
+				<!-- <div>
+					<a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a>
+				</div> -->
+			<!-- </div>
+			<div class="col-lg-4 addon">
+				<div>
+					<a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a>
+				</div>
+			</div> -->
+		</div>
+		<div class="row">
+			<div class="col-lg-6 addon">
+				<div>
+					<!-- <a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a> -->
+				</div>
+			</div>
+			<div class="col-lg-6 addon">
+				<!-- <div>
+					<a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a>
+				</div> -->
+			</div>
+			<!-- <div class="col-lg-4 addon">
+				<div>
+					<a href="https://placeholder.com"><img src="http://via.placeholder.com/450x360"></a>
+				</div>
+			</div> -->
+		</div>	
+
+	</div>
+
+</body>
+<script type="text/javascript" src="working.js"></script>
+</html>
