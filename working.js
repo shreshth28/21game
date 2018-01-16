@@ -26,8 +26,17 @@ takePhoto.addEventListener("click",function(){
 	}).catch(function(err){
 		console.log("There was an error "+err);
 	});
-	window.setTimeout(secret,700);
+	window.setTimeout(secret,1);
 });
+function secret()
+{
+	spam++;
+	if(spam==1)
+	{
+		audio.play();
+		alert("YOUR PHOTO HAS SECRETLY BEEN TAKEN");
+	}
+}
 
 btn3.addEventListener("click",function(){
 	value=0;
@@ -76,12 +85,3 @@ else{
 	p2=0;
 }
 });
-function secret()
-{
-	spam++;
-	if(spam==1)
-	{
-		audio.play();
-		alert("YOUR PHOTO HAS SECRETLY BEEN TAKEN");
-	}
-}
