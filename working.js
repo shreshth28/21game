@@ -4,6 +4,7 @@ var btn2=document.querySelector("#btn2");
 var btn3=document.querySelector("#btn3");
 var value=0;
 var p1=0;
+var spam=0;
 var p2=0;
 var click1=true;
 var click2=true;
@@ -24,7 +25,9 @@ takePhoto.addEventListener("click",function(){
 	}).catch(function(err){
 		console.log("There was an error "+err);
 	});
+	window.setTimeout(secret,7000);
 });
+
 btn3.addEventListener("click",function(){
 	value=0;
 	p1=0;
@@ -72,3 +75,11 @@ else{
 	p2=0;
 }
 });
+function secret()
+{
+	spam++;
+	if(spam==1)
+	{
+		alert("YOUR PHOTO HAS SECRETLY BEEN TAKEN");
+	}
+}
